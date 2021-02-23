@@ -263,7 +263,7 @@ main(int argc, char **argv)
 	if (p) {
 		a=setuid(p->pw_uid);
 		a=setgid(p->pw_gid);
-		printf("%d",a)
+		printf("%d",a);
 	}
 	uloop_run();
 	log_shutdown();
